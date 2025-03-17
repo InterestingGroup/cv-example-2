@@ -1,0 +1,690 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* normalization */
+
+body
+{
+    background-image: url(https://img.freepik.com/free-vector/abstract-organic-pattern-design-background_1048-19286.jpg?t=st=1723474672~exp=1723478272~hmac=57c340ed9f5b549e1b6524355e41280a5c92145609ac71a0f5a1e92690f4a0bc&w=826);
+    background-size: 6%;
+}
+
+#backgroundImg
+{
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    position: fixed;
+    z-index: -10;
+
+}
+
+body{font-family: Arial;}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+button
+{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+main
+{
+    margin: 0 12rem;
+}
+
+ul{list-style: none;}
+
+/* nav section */
+
+#closeMenuBtn
+{
+    /* border-color: white; */
+    background-color: transparent;
+}
+
+header
+{
+    padding: 1rem 3rem;
+    margin-bottom: 3rem;
+    position: fixed;
+    /* background-color: white; */
+    width: 100%;
+    z-index: 1000;
+
+
+
+}
+
+header > nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.826);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 10px 20px;
+}
+
+header > nav > div > a, nav button
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header > nav > ul
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > nav > ul li:not(:last-child)
+{
+    margin-right: .5rem;
+}
+
+
+/* header > nav > ul a{color: white;} */
+
+header > nav > ul a, header > nav > div > a, nav button
+{
+    padding: .5rem 1rem;
+}
+
+header > nav > ul a:hover, header > nav > div > a:hover
+{
+    background-color: black;
+    color: white;
+    border-radius: 4rem;
+}
+/* 
+nav button{border: 1px solid white;} */
+
+nav button:hover
+{
+    border-color: black;
+    border-radius: 4rem;
+}
+
+
+/* Main section */
+
+main{padding-top: 1rem;}
+
+#contactinfo
+{
+    display: flex;
+    justify-content: center;
+}
+
+#contactinfo__box
+{
+    top: 15%;
+    position: fixed;
+    background-color: white;
+    box-shadow: .1px .1px 5px black;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contactinfo__box > ul:not(:last-of-type)
+{
+    margin-right: 4rem;
+}
+
+#infoclose
+{
+    position: absolute;
+    right: 8px;
+}
+
+#CloseBTN
+{
+
+    margin-bottom: 2.75rem;
+    font-size: 2.25rem;
+    background-color: transparent;
+}
+
+#socialmedia
+{
+    display: flex;
+}
+
+#socialmedia li
+{
+    margin-right: 1rem;
+}
+
+#socialmedia i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font: 1rem;
+}
+
+#socialmedia i:hover
+{
+    color: aliceblue;
+    background-color: #080808;
+}
+
+#ScroolUp i{color: rgb(0, 0, 0);}
+
+#ScroolUp
+{
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+#aboutpageLink, #servicepageLink, #projectpageLink, #reviewspageLink, #contactUsPageLink
+{
+    margin-bottom: 6rem;
+    color: rgba(255, 255, 255, 0);
+    
+}
+
+#homepage
+{
+    height: 100vh;
+    margin-top: 5rem;
+}
+
+
+#homepage > div{text-align: center;}
+
+#aboutpage, #servicepage, #projectpage, #reviewspage, #contactUsPage
+{
+    margin-bottom: 6rem;
+}
+#servicepage > h1, #projectpage > h1, #reviewspage > h1, #contactUsPage > h1{color: black;}
+#aboutpage > h1, #servicepage > h1, #projectpage > h1, #reviewspage > h1, #contactUsPage > h1{text-shadow: .25rem .25rem .125rem  rgb(129, 129, 129);}
+
+#aboutpage, .card, .servicepage__card{background-color: white;}
+
+#homepage img
+{
+    border-radius: .5rem;
+    width: 55%;
+}
+
+#homepage ul > li:nth-child(even)
+{
+    color: transparent;
+    -webkit-text-stroke: 5px rgb(98, 0, 255); /* Ustawia kolor obramowania i grubość */
+}
+
+/* about me section */
+
+h2
+{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#aboutpage
+{
+    box-shadow: .1px .1px 5px black;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+}
+
+#aboutpage > h1
+{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+#aboutpage li ul{list-style-type: disc;}
+
+#aboutpage li ul li
+{
+    margin-left: 2rem;
+    padding: .125rem;
+}
+
+#aboutpage li ul{margin-bottom: 2rem;}
+
+#aboutpage ul h1
+{
+    font-size: 1.5rem;
+}
+
+#aboutpage > div
+{
+    display: flex;
+}
+
+#aboutpage img
+{
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
+
+/* #aboutpage > div > div{width: 10rem;} */
+
+#aboutpage p
+{
+    margin-bottom: 2rem;
+    text-align: justify;
+    width: 100%;
+}
+
+/* servicepage section */
+
+#servicepage > h1
+{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+#servicepage ul
+{
+    list-style-type: disc;
+    margin-bottom: 1rem;
+}
+#servicepage ul li{margin-left: 2rem;}
+
+#servicepage__box
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.servicepage__card
+{
+    /* width: 30%; */
+    width: 48%;
+    box-shadow: .1px .1px 5px black;
+    border-radius: 1rem ;
+    padding: 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.servicepage__card:hover
+{
+    transition: .5s;
+    /* width: 34%; */
+    width: 55%;
+}
+
+/* projectpage section */
+
+#projectpage > h1
+{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+}
+
+.container .card:hover
+{
+    transition: .5s;
+    width: 120%;
+}
+
+.card
+{
+    transition: .5s;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    box-shadow: .1px .1px 5px black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.card img
+{
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.card > ul > li:not(:nth-child(2))
+{
+    margin-bottom: .5rem;
+}
+
+.card ul ul
+{
+    display: flex;
+}
+
+.card > ul > li > ul > li
+{
+    margin-right: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding:.25rem 1rem;
+}
+
+.card > ul > li > ul > li li
+{
+    margin-right: .5rem;
+}
+
+.card h1
+{
+    font-size: 2rem;
+}
+
+.container
+{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.container > .card
+{
+    width: 100%;
+}
+
+
+.container > .card:hover
+{
+    height: 120%; 
+}
+
+/* scroolbar */
+
+::-webkit-scrollbar 
+{
+    background-color: c9c9c9;
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: #808080;
+    border-radius: 10px;
+}
+
+
+/* Reviews section */
+
+#reviewspage
+{
+    text-align: center;
+}
+
+#reviewspage > h1
+{
+
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+#reviewspage > div > div
+{
+    margin-bottom: 2rem;
+}
+
+#reviewspage img
+{
+    transition: .5s;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#reviewspage img:hover
+{
+    border: 1px solid white;
+    box-shadow: 5px 5px 50px rgb(41, 0, 61);
+    transition: .5s;
+}
+
+#reviewspage > div
+{
+    min-width: 100%;
+    overflow-x: scroll;
+}
+
+/* contactUsPage */
+
+#contactUsPage{text-align: center;}
+
+#contactUsPage > h1
+{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+#contactUsPage form
+{
+    margin: 0 auto;
+    /* background-color: red; */
+    width: 50%;
+}
+
+#contactUsPage form > div
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#contactUsPage form input, #contactUsPage > form > button
+{
+    background-color: white;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    margin-bottom: .75rem;
+}
+
+#contactUsPage input[type=submit], #contactUsPage button
+{
+    width: 100%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+#contactUsPage input[type=submit]:hover, #contactUsPage button:hover
+{
+    background-color: rgb(41, 0, 61);
+    color: white;
+    transition: .5s;
+}
+
+#contactUsPage form textarea
+{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    width: 100%;
+    min-height: 10rem;
+    margin-bottom: 2rem;
+    resize: vertical;
+}
+
+/* responsive */
+
+
+@media(max-width: 1700px)
+{
+
+    #homepage
+    {
+        height: 50vh;
+        transition: .5s;
+    }
+
+    #aboutpage > div
+    {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    #aboutpage img
+    {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #servicepage__box{margin-bottom: 0;}
+
+    #servicepage #servicepage__box{flex-direction: column;}
+
+    .servicepage__card
+    {
+        width: 100%;
+        margin-bottom: 2.75rem;
+        transition: .5s;
+    }
+    
+    .servicepage__card:hover{width: 105%;}
+
+        
+    .servicepage__card:hover
+    {
+        transition: .5s;
+        width: 95%;
+    }
+
+    /* #reviewspage
+    {
+        min-width: 1700px;
+        overflow-x: scroll;
+    } */
+}
+
+@media(max-width: 1050px)
+{
+    #projectpage .container
+    {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card{pointer-events: none;}
+
+    main
+    {
+        margin: 0 2rem;
+    }
+}
+
+@media(max-width: 900px)
+{
+    #contactinfo
+    {
+        width: 20%;
+    }
+
+    #homepage
+    {
+        /* height: 100vh; */
+        margin-top: 10rem;
+    }    
+    
+    nav
+    {
+        flex-direction: column;
+        gap: -2rem
+    }
+
+    nav > div
+    {
+        margin-bottom: 2rem;
+    }
+    
+    #aboutpageLink, #servicepageLink, #projectpageLink, #reviewspageLink, #contactUsPageLink{margin-bottom: 10rem;}
+    
+    #contactinfo__box
+    {
+        flex-direction: column;
+        height: 9rem;   
+        left: 10%;
+        right: 10%;
+        z-index: 1000;
+    }
+
+    
+}
+
+
+@media(max-width: 650px)
+{
+
+    #contactUsPage form{width: 100%;}
+
+    #contactinfo__box{height: 15rem;}
+    
+    #socialmedia
+    {
+        margin-top: .5rem;
+        flex-wrap: wrap;
+    }
+    #socialmedia > a{margin-bottom: .5rem;}
+    
+    #DropDownBtn{display: none;}
+
+    #homepage{display: none;}
+
+    #aboutpage > h1, #servicepage > h1, #projectpage > h1, #reviewspage h1, #contactUsPage > h1{font-size: 200%;}
+
+    nav > ul
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav > ul li
+    {
+        margin-bottom: .75rem;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        width: 100%;
+        text-align: center;
+    }
+    /* #aboutpageLink, #servicepageLink, #projectpageLink, #reviewspageLink {margin-bottom: 18rem;} */
+
+    header > nav > ul li:not(:last-child) {margin-left: .5rem;}
+
+
+}
+
+
+@media(max-width: 430px)
+{
+    .card ul ul
+    {
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
